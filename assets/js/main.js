@@ -13,18 +13,18 @@
 
 	// Breakpoints.
 		breakpoints({
-			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
-			medium:	'(max-width: 980px)',
-			small:	'(max-width: 736px)',
-			xsmall:	'(max-width: 480px)'
+			xlarge:	'(max-width: 1600px)',
+			large:	'(max-width: 1200px)',
+			medium:	'(max-width: 900px)',
+			small:	'(max-width: 700px)',
+			xsmall:	'(max-width: 400px)'
 		});
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 1000);
 		});
 
 	// Header.
