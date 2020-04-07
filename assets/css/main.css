@@ -1796,7 +1796,8 @@ input, select, textarea {
 	#nav {
 		text-align: center;
 		height: 4.25em;
-		cursor: default;
+    cursor: default;
+    
 	}
 
 		#nav a {
@@ -2226,15 +2227,6 @@ input, select, textarea {
       text-decoration: underline;
     }
 
-    .dark-mode__toggle {
-      background: papayawhip;
-      border-radius: 50px;
-      border: 1px solid black;
-      height: 20px;
-      position: relative;
-      width: 40px;
-    }
-
     .toggle {
       background: #f68819;
       border-radius: 50px;
@@ -2262,4 +2254,13 @@ input, select, textarea {
     .text-mode {
       color: #fff;
       border-top: white;
+    }
+
+    .fas, .fa-moon {
+      font-size: 20px;
+      color: rgb(235, 193, 31);
+    }
+
+    .fa-sun {
+      color: rgb(252, 212, 64);
     }
