@@ -23,7 +23,7 @@
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
 						<a href="#work" class="icon solid fa-folder"><span>Projects</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-            <a href="https://www.linkedin.com/in/modurotolu-olokode/" target="_blank" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
+            <a href="https://www.linkedin.com/in/modurotolu-olokode/" target="_blank" class="icon solid brands fa-linkedin"><span>LinkedIn</span></a>
             <a id="icon_dark" style="font-size: 28px;" class="fas fa-moon" onclick="toggleMode()">
               <!-- <i class="fas fa-moon" onclick="toggleMode()"></i> -->
               <!-- <div class="dark-mode__toggle" onclick="toggleMode()"> -->
@@ -200,6 +200,8 @@
             };
             let mode_icon = document.getElementsByClassName("fa-moon");
             mode_icon[0].classList.toggle("fa-sun")
+            let linkedIn = document.getElementsByClassName("fa-linkedin");
+            linkedIn[0].classList.toggle("dark-mode")
         }
       </script>
 	</body>
