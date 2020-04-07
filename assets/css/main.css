@@ -1306,7 +1306,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/background3.jpg");
+		/* background-image: url("images/overlay.png"); */
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1327,9 +1327,10 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #777777;
+		/* color: #777777; */
 		font-size: 20pt;
-		line-height: 1.75em;
+    line-height: 1.75em;
+    /* color: #363636; */
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1366,7 +1367,7 @@ input, select, textarea {
 
 	strong, b, h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #363636;
+		/* color: #363636; */
 	}
 
 	h1 {
@@ -1521,7 +1522,11 @@ input, select, textarea {
 
 	section, article {
 		margin-bottom: 3em;
-	}
+  }
+  
+  article {
+    border: 0.5px dashed black;
+  }
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
 			margin-bottom: 0;
@@ -1532,8 +1537,8 @@ input, select, textarea {
 	}
 
 		header > p {
-			margin: 0.5em 0 0 0;
-			color: #aaa;
+      margin: 0.5em 0 0 0;
+      font-weight: 300;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1583,8 +1588,10 @@ input, select, textarea {
       }
 
       .col-4.col-6-medium.col-12-small {
-        color: grey;
+        /* color: grey; */
         line-height: 1.4em;
+        border-left: 1px dotted black;
+        border-bottom: 1px dotted black;
       }
 
       .col-4.col-6-medium.col-12-small  p {
@@ -1593,7 +1600,7 @@ input, select, textarea {
 
     .col-4.col-6-medium.col-12-small:hover {
       transition: 0.3s ease;
-      box-shadow: 10px 10px 5px grey;
+      box-shadow: 10px 10px 5px rgb(139, 138, 138);
       font-size: large;
     }
 
@@ -1751,7 +1758,8 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		position: relative;
-		text-decoration: none;
+    text-decoration: none;
+    color: grey;  
 	}
 
 		.icon:before {
@@ -1794,7 +1802,8 @@ input, select, textarea {
 		#nav a {
 			position: relative;
 			display: inline-block;
-			color: #ffffff;
+      /* color: grey;   */
+      /* #ffffff; */
 			width: 1em;
 			height: 1em;
 			line-height: 0.9em;
@@ -1823,7 +1832,7 @@ input, select, textarea {
 				left: 50%;
 				bottom: -0.75em;
 				margin-left: -0.5em;
-				border-bottom: solid 0em #ffffff;
+				border-bottom: solid 0em rgb(187, 175, 175);
 				border-left: solid 0.5em transparent;
 				border-right: solid 0.5em transparent;
 				-moz-transition: border-bottom-width .25s ease-in-out;
@@ -2159,7 +2168,6 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		color:white;
 		text-align: center;
 		padding: 1em 0 0 0;
     font-size: 0.73em;
@@ -2201,7 +2209,50 @@ input, select, textarea {
 			}
 
     }
+
+    .p-github {
+      color: black;
+    }
     
     .p-github:hover {
-      color: rgba(0, 0, 0, 0.432);
+      color: #f68819;
+      text-decoration: underline;
+    }
+
+    .dark-mode__toggle {
+      background: papayawhip;
+      border-radius: 50px;
+      border: 1px solid black;
+      height: 20px;
+      position: relative;
+      width: 40px;
+    }
+
+    .toggle {
+      background: #f68819;
+      border-radius: 50px;
+      height: 18px;
+      left: 0;
+      position: absolute;
+      transition: 0.2s;
+      width: 20px;
+    }
+    
+    .toggled {
+      left: 18px;
+    }
+
+    .dark-mode {
+      color: #fff;
+      /* color: white; */
+      background-image: url("images/background3.jpg");
+    }
+    
+    .section-h, .section-p {
+      color: black;
+    }
+
+    .text-mode {
+      color: #fff;
+      border-top: white;
     }
