@@ -133,16 +133,16 @@
 				<!-- Footer -->
 					<div id="footer">
 						<ul class="copyright">
-              <li><i class="fab fa-git-square"></i> Git</li>
-              <li><i class="fab fa-js"></i> JavaScript</li>
-              <li><i class="fab fa-react"></i> React</li>
-              <li><i class="fab fa-node"></i> Node JS</li>
-              <li><i class="fab fa-python"></i> Python</li>
-              <li>Express</li>
-              <li>Django</li>
-              <li>MongoDB</li>
-              <li>SQL</li>
-              <li>GraphQL</li>
+              <li class="stack"><i class="fab fa-git-square"></i> Git</li>
+              <li class="stack"><i class="fab fa-js"></i> JavaScript</li>
+              <li class="stack"><i class="fab fa-react"></i> React</li>
+              <li class="stack"><i class="fab fa-node"></i> Node JS</li>
+              <li class="stack"><i class="fab fa-python"></i> Python</li>
+              <li class="stack">Express</li>
+              <li class="stack">Django</li>
+              <li class="stack">MongoDB</li>
+              <li class="stack">SQL</li>
+              <li class="stack">GraphQL</li>
 						</ul>
 					</div>
 
@@ -181,13 +181,19 @@
             };
             let foot_h = document.getElementsByClassName('section-h');
             let foot_p = document.getElementsByClassName('section-p');
-            for (let i=0; i < art.length; i++) {
+            for (let i=0; i < foot_h.length; i++) {
               foot_h[i].classList.toggle('text-mode');
               foot_p[i].classList.toggle('text-mode');
             };
             let arrow = document.getElementById('nav')
             let arrow1 = arrow.getElementsByTagName('a')
             arrow1[0].classList.toggle('text-mode')
+            let stack = document.getElementById('footer')
+            let stack1 = stack.getElementsByTagName('li')
+            for (let i=0; i < stack1.length; i++) {
+              stack1[i].classList.toggle('stack');
+              stack1[i].classList.toggle('horizontal-border-dark-mode');
+            };
         }
       </script>
 	</body>

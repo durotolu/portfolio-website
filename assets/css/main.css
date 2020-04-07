@@ -2170,7 +2170,7 @@ input, select, textarea {
 	#footer {
 		text-align: center;
 		padding: 1em 0 0 0;
-    font-size: 0.73em;
+    font-size: 0.75em;
     font-weight: bolder;
 	}
 
@@ -2188,12 +2188,19 @@ input, select, textarea {
 			padding-left: 0;
 		}
 
-			#footer .copyright li {
+			.horizontal-border-dark-mode {
+        display: inline-block;
+				padding-left: 1em;
+				margin-left: 1em;
+				border-left: dotted 1.5px rgb(255, 255, 255);
+      }
+      
+      .copyright .stack {
 				display: inline-block;
 				padding-left: 1em;
 				margin-left: 1em;
-				border-left: solid 1px rgba(255, 255, 255, 0.25);
-			}
+				border-left: dashed 2px rgba(29, 27, 27, 0.342); 
+      }
 
 				#footer .copyright li:first-child {
 					padding-left: 0;
