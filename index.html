@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
   <STYLE>A {text-decoration: none;} </STYLE>
-	<body class="is-preload">
+	<body onload="onload()" class="is-preload before-load">
 
 		<!-- Wrapper-->
 			<div id="wrapper">
@@ -159,6 +159,15 @@
 			<script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
       <script>
+        $(window).load(function() {
+          alert("datzall");
+        })();
+
+        function onload() {
+          body = document.getElementsByTagName("body")
+          body[0].classList.remove("before-load")
+        }
+        
         function toggleMode() {
           // let element = document.getElementById("toToggle");
           // element.classList.toggle("toggle")

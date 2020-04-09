@@ -1306,9 +1306,9 @@ input, select, textarea {
 	}
 
 	body {
-    background-image: url("images/overlay.png"), url("images/bg.jpg");
+    background-image: url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
+		background-size: 100%;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
@@ -2264,4 +2264,14 @@ input, select, textarea {
 
     .fa-sun {
       color: rgb(252, 212, 64);
+    }
+
+    .before-load {
+      background-image: url("/images/480.gif");
+      size: 50%;
+      height: 10%;
+      width: 20%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
     }
