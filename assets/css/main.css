@@ -1376,13 +1376,19 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.8em;
+		font-size: 1.5em;
 		letter-spacing: -0.015em;
 	}
 
-	h3, h4, h5, h6 {
+	h3, h5, h6 {
 		font-size: 1.25em;
 		letter-spacing: -0.015em;
+  }
+  
+  h4 {
+		font-size: 0.8em;
+    letter-spacing: -0.015em;
+    height: 1.3em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1395,8 +1401,12 @@ input, select, textarea {
 			font-size: 1.375em;
 		}
 
-		h3, h4, h5, h6 {
+		h3, h5, h6 {
 			font-size: 1em;
+    }
+    
+    h4 {
+			font-size: 0.7em;
 		}
 
 	}
@@ -1534,7 +1544,7 @@ input, select, textarea {
 		}
 
 	header {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1.2em 0;
 	}
 
 		header > p {
@@ -1591,6 +1601,10 @@ input, select, textarea {
       .col-4.col-6-medium.col-12-small {
         line-height: 1.5em;
         border-left: 1px dotted black;
+      }
+
+      .col-4.col-6-medium.col-12-small:first-child {
+        border: none;
       }
 
       .col-4.col-6-medium.col-12-small  p {
@@ -2299,3 +2313,65 @@ input, select, textarea {
       background-repeat: no-repeat;
       background-size: auto;
     }
+
+    /* Skills */
+
+  .skills .row {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+  }
+
+	.skills label {
+		display: block;
+		font-weight: 400;
+		color: #363636;
+		margin: 0 0 1em 0;
+  }
+  
+  .skills .subsec {
+    /* padding: 0.5em; */
+    padding-top: 0em;
+  }
+
+  .skills ul {
+    padding: 0.1em;
+    margin-bottom: 0em;
+  }
+
+  .skills li {
+    font-size: 0.8em;
+    height: 1.8em;
+  }
+
+	.skills textarea {
+    margin-bottom: 1em;
+		-webkit-appearance: none;
+		border: 0;
+		background: #f4f4f4;
+		padding: 0.75em;
+		width: 100%;
+		-moz-transition: background-color .25s ease-in-out;
+		-webkit-transition: background-color .25s ease-in-out;
+		-ms-transition: background-color .25s ease-in-out;
+		transition: background-color .25s ease-in-out;
+	}
+
+		.skills textarea:focus {
+			background: #f8f8f8;
+		}
+
+	.skills ::-webkit-input-placeholder {
+		color: #999;
+	}
+
+	.skills :-moz-placeholder {
+		color: #999;
+	}
+
+	.skills ::-moz-placeholder {
+		color: #999;
+	}
+
+	.skills :-ms-input-placeholder {
+		color: #999;
+	}
