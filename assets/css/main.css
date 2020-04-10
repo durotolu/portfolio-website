@@ -2243,8 +2243,8 @@ input, select, textarea {
 
     .dark-mode {
       color: #fff;
-      /* color: white; */
       background-image: url("images/background3.jpg");
+      border-color: white;
     }
     
     .section-h, .section-p {
