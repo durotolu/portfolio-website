@@ -169,48 +169,35 @@
         }
         
         function toggleMode() {
-          // let element = document.getElementById("toToggle");
-          // element.classList.toggle("toggle")
-          let panel = document.getElementById("home");
-          // let header = panel.getElementsByTagName("header")
-          // let text = header.getElementsByTagName("h3")
-          x = panel.querySelectorAll("h3") //classList.toggle(".text-mode");
-          // if (x[0].style.color = "white") {
-          //   x[0].style.color ="inherit";
-          // } else {
-          //   x[0].style.color ="white";
-          // }
-            let body = document.body;
-            body.classList.toggle('dark-mode');
-            let art = document.getElementsByTagName('article');
-            // let par = art.getElementsByTagName("p")
-            for (let i=0; i < art.length; i++) {
-              art[i].classList.toggle('dark-mode');
-              // par[i].classList.toggle('dark-mode');
-            };
-            let ico = document.getElementsByClassName('icon');
-            for (let i=0; i < art.length; i++) {
-              ico[i].classList.toggle('dark-mode');
-            };
-            let foot_h = document.getElementsByClassName('section-h');
-            let foot_p = document.getElementsByClassName('section-p');
-            for (let i=0; i < foot_h.length; i++) {
-              foot_h[i].classList.toggle('text-mode');
-              foot_p[i].classList.toggle('text-mode');
-            };
-            let arrow = document.getElementById('nav')
-            let arrow1 = arrow.getElementsByTagName('a')
-            arrow1[0].classList.toggle('text-mode')
-            let stack = document.getElementById('footer')
-            let stack1 = stack.getElementsByTagName('li')
-            for (let i=0; i < stack1.length; i++) {
-              stack1[i].classList.toggle('stack');
-              stack1[i].classList.toggle('horizontal-border-dark-mode');
-            };
-            let mode_icon = document.getElementsByClassName("fa-moon");
-            mode_icon[0].classList.toggle("fa-sun")
-            let linkedIn = document.getElementsByClassName("fa-linkedin");
-            linkedIn[0].classList.toggle("dark-mode")
+          let body = document.body;
+          body.classList.toggle('dark-mode');
+          let art = document.getElementsByTagName('article');
+          for (let i=0; i < art.length; i++) {
+            art[i].classList.toggle('dark-mode');
+          };
+          let ico = document.getElementsByClassName('icon');
+          for (let i=0; i < art.length; i++) {
+            ico[i].classList.toggle('dark-mode');
+          };
+          let foot_h = document.getElementsByClassName('section-h');
+          let foot_p = document.getElementsByClassName('section-p');
+          for (let i=0; i < foot_h.length; i++) {
+            foot_h[i].classList.toggle('text-mode');
+            foot_p[i].classList.toggle('text-mode');
+          };
+          let arrow = document.getElementById('nav')
+          let arrow1 = arrow.getElementsByTagName('a')
+          arrow1[0].classList.toggle('text-mode')
+          let stack = document.getElementById('footer')
+          let stack1 = stack.getElementsByTagName('li')
+          for (let i=0; i < stack1.length; i++) {
+            stack1[i].classList.toggle('stack');
+            stack1[i].classList.toggle('horizontal-border-dark-mode');
+          };
+          let mode_icon = document.getElementsByClassName("fa-moon");
+          mode_icon[0].classList.toggle("fa-sun")
+          let linkedIn = document.getElementsByClassName("fa-linkedin");
+          linkedIn[0].classList.toggle("dark-mode")
         }
       </script>
 	</body>
