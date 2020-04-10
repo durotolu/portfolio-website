@@ -23,13 +23,9 @@
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
 						<a href="#work" class="icon solid fa-folder"><span>Projects</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-            <a href="https://www.linkedin.com/in/modurotolu-olokode/" target="_blank" class="icon solid brands fa-linkedin"><span>LinkedIn</span></a>
-            <a id="icon_dark" style="font-size: 28px;" class="fas fa-moon" onclick="toggleMode()">
-              <!-- <i class="fas fa-moon" onclick="toggleMode()"></i> -->
-              <!-- <div class="dark-mode__toggle" onclick="toggleMode()"> -->
-                <!-- <div id ="toToggle"></div> -->
-              <!-- </div> -->
-              <span style="font-size: 15px;">Dark mode</span>
+            <a href="#skills" class="icon solid fa-tools"><span>Skills</span></a>
+            <a style="font-size: 20px; margin-left: 1.5rem;" class="icon solid fa-moon" onclick="toggleMode()">
+              <span style="font-size: initial;">Dark mode</span>
             </a>
 					</nav>
 
@@ -46,7 +42,7 @@
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/duro.png" alt="" />
+									<img src="images/duro.PNG" alt="" />
 								</a>
 							</article>
 
@@ -106,7 +102,11 @@
 
 						<!-- Contact -->
 							<article id="contact" class="panel">
-								<header>
+                <nav class="nav-contact icon">
+                  <a href="https://www.linkedin.com/in/modurotolu-olokode/" target="_blank" class="icon solid brands fa-linkedin"></a>
+                  <a href="https://github.com/durotolu" target="_blank" class="icon solid brands fa-github"></a>
+                </nav>
+                  <header>
 									<h2>Contact Me</h2>
 								</header>
 								<form action="mailto:durolawk@gmail.com" method="post" enctype="text/plain">
@@ -147,7 +147,10 @@
               <li class="stack">MongoDB</li>
               <li class="stack">SQL</li>
               <li class="stack">GraphQL</li>
-						</ul>
+            </ul>
+            <span>&copy; Modurotolu Olokode</span>
+            <span><a href="https://github.com/durotolu" target="_blank" class="icon solid brands fa-github"></a></span>
+            <span><a href="https://www.linkedin.com/in/modurotolu-olokode/" target="_blank" class="icon solid brands fa-linkedin"></a></span>
 					</div>
 
 			</div>
@@ -176,7 +179,7 @@
             art[i].classList.toggle('dark-mode');
           };
           let ico = document.getElementsByClassName('icon');
-          for (let i=0; i < art.length; i++) {
+          for (let i=0; i < ico.length; i++) {
             ico[i].classList.toggle('dark-mode');
           };
           let foot_h = document.getElementsByClassName('section-h');
@@ -196,8 +199,6 @@
           };
           let mode_icon = document.getElementsByClassName("fa-moon");
           mode_icon[0].classList.toggle("fa-sun")
-          let linkedIn = document.getElementsByClassName("fa-linkedin");
-          linkedIn[0].classList.toggle("dark-mode")
         }
       </script>
 	</body>
